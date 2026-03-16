@@ -13,7 +13,7 @@ function App() {
     setLoading(true);
     setResult(null);
     try {
-      const res = await axios.post("http://localhost:5000/api/generate", {
+      const res = await axios.post("/api/generate", {
         userInput: input,
       });
       setResult(res.data);
